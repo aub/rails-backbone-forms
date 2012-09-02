@@ -1,24 +1,42 @@
 rails-backbone-forms
 ====================
 
-This gem wraps the [backbone-forms library](https://github.com/powmedia/backbone-forms) in the Rails asset pipeline's loving embrace.  Rails 3.1 and up.
+This gem provides a version of the
+[backbone-forms library](https://github.com/powmedia/backbone-forms)
+designed to work with the Rails 3.1 asset pipeline. It is versioned to match
+the backbone-forms library and currently supports 0.10.1.
 
-Step 1: Add it to your gemfile:
+# <a name="installation"></a>Install
 
-    gem 'backbone-forms-rails'
+    gem 'rails-backbone-forms'
 
-Step 2: Include assets:
+# <a name="configuration"></a>Configure
+
+In application.js, add the following:
 
 ```javascript
-// In application.js
-//= require backbone-forms-rails
+//= require backbone-forms
 ```
 
+If you're using bootstrap and want to use backbone-form's templates for it, you
+can instead use:
+
+```javascript
+//= require backbone-forms-bootstrap
+```
+
+Same deal with application.css:
+
 ```css
-/* In application.css */
 /*
- *= require backbone-forms-rails
+ *= require backbone-forms
  */
 ```
 
-Step 3: Rock and roll.
+Or, for bootstrap:
+
+```css
+/*
+ *= require backbone-forms-bootstrap
+ */
+```
