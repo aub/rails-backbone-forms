@@ -4,7 +4,7 @@ rails-backbone-forms
 This gem provides a version of the
 [backbone-forms library](https://github.com/powmedia/backbone-forms)
 designed to work with the Rails 3.1 asset pipeline. It is versioned to match
-the backbone-forms library and currently supports 0.10.1.
+the backbone-forms library and currently supports 0.14.0.
 
 # <a name="installation"></a>Install
 
